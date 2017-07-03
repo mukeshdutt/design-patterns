@@ -24,7 +24,7 @@ namespace ShallowDeepCopy
             System.Console.WriteLine($"Name : {sh1.Name} ");
             System.Console.WriteLine($"Mobile : {sh1.Mobile} ");
 
-            System.Console.WriteLine("---------After copied and change cloned data previous data still remain--------");
+            System.Console.WriteLine("---------After copied and change cloned data previous values are still remain--------");
             System.Console.WriteLine($"Name : {sh1.Name} ");
             System.Console.WriteLine($"Mobile {sh1.Mobile} ");
 
@@ -48,7 +48,7 @@ namespace ShallowDeepCopy
             System.Console.WriteLine($"Account number : {de1.account.Number} ");
             System.Console.WriteLine($"Pan details : {de1.account.Pan} ");
 
-            System.Console.WriteLine("---------After copied and change cloned data  previous data still remain--------");
+            System.Console.WriteLine("---------After copied and change cloned data previous values are still remain--------");
             System.Console.WriteLine($"Name : {de1.Name} ");
             System.Console.WriteLine($"Mobile : {de1.Mobile} ");
             System.Console.WriteLine($"Account number : {de1.account.Number} ");
