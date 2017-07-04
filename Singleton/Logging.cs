@@ -1,10 +1,10 @@
 namespace Singleton
 {
-    public class Logging
+    // This is simple and first version of singleton pattern
+    public sealed class Logging
     {
         public static Logging logging = null;
         public string Name { get; set; }
-
 
         private Logging()
         {
