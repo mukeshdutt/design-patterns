@@ -6,9 +6,9 @@ namespace Factory
     {
         static void Main(string[] args)
         {
-            // Here is implementing factory design pattern according to GOF this is not comes under design pattern
-            // But this is the to create a interface or abstract class and who need this method they can implement 
-            // according to their need
+            // Here is an implementation of factory design pattern according to GOF this does not come under design pattern
+            // But this is the concept to create common method at same place using an interface or abstract class 
+            // and who need these methods they can implement according to their need
 
             // Creating instace for bus
             ITravel bus = new Bus();
