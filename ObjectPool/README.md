@@ -1,0 +1,11 @@
+
+**Object Pool Design Pattern**
+
+The object pool pattern is a creational design pattern that can improve performance when working with classes that are slow to instantiate. Rather than constructing new objects, reusable objects are retrieved from, and released to, a pool as required.
+
+**What is the Object Pool Pattern?**
+
+When you need to work with a large number of objects that are particularly expensive to instantiate and you only need each object for a short period of time, the performance of your entire application may be adversely affected. In these situations you might be able to use the object pool design pattern.
+The object pool design pattern creates a set of objects that may be reused. When you need a new object you request it from the pool. If a previously prepared object is available it is returned immediately, avoiding the instantiation cost. If no objects are present in the pool, a new item is created and returned. When you have used the object and no longer need it, you return it to the pool, allowing it to be used again in the future without going through the slow instantiation process. It's important that once an object is returned to the pool that you no longer use any existing references. Doing so could cause unpredictable behaviour.
+In some object pools the resources are limited so a maximum number of objects is specified. If this number is reached and a new item is requested, you may elect to throw an exception or block the thread until an object is released back into the pool.
+The object pool design pattern is used in several places in the standard classes of the .NET framework. One example is the .NET Framework Data Provider for SQL Server. As SQL Server database connections can be slow to create, a pool of connections is maintained. When you close a connection it does not actually relinquish the link to SQL Server. Instead, the connection is held in a pool from which it can be retrieved when requesting a new connection. This substantially increases the speed of making connections.
