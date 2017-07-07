@@ -6,7 +6,10 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ITarget target = new EmployeeAdapter();
+            ThiredPartyBillingSystem client = new ThiredPartyBillingSystem(target);
+
+            client.ShowEmployees();
         }
     }
 }
